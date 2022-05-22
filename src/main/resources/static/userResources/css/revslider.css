@@ -1,0 +1,233 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+  
+  
+.rslides .caption {
+    font-size:13px;
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    color: #2a5b6c;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    margin-left: -.0625rem;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: calc(100vh - 40px - 6.875rem - 2.5rem);
+    min-width: 150px;
+    bottom: 25%;
+    left: 0px;
+    padding-right: 4rem;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+	width: 150px;
+	line-height:1.4em;
+	font-weight:500
+} 
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+.tagline {margin-top:21%; margin-left:-85px}
+  
+  
+.tagline h1 {
+	color: #2a5b6c;     
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:3px;
+    text-transform: uppercase; 
+	font-size: 68px;
+    font-weight: 500;
+	line-height:1.2em;
+	margin-top:0
+}
+
+.tagline h1:after {
+	margin-top: 1rem;
+    display: block;
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #90c741;
+    margin-top:30px;
+    margin-bottom:20px;
+    width: 200px;
+    transition: width .6s cubic-bezier(.9,.16,.02,1.06) 2.125s;
+	margin-left:-25px
+}
+
+.tagline p {
+	color: #5d5d5d;     
+    font-family:'Rubik', sans-serif;
+    letter-spacing:1px;
+	font-size: 18px;
+    font-weight: 400;
+	line-height:1.8em;
+	margin-top:30px;
+	padding-right:20%
+}
+
+
+.rslides {
+  margin: 0 auto;
+  }
+
+.rslides_container {
+  margin-bottom: 50px;
+  position: relative;
+  margin-left: 5vw;
+  }
+  
+.padd-right-0 {padding-right:0}
+
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  margin-top: -45px;
+  }
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+.transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff; /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+  }
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+  }
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("themes.gif") no-repeat left 50%;
+  width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+  }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  text-align: center;
+  left: 10px;
+    top: 30%;
+    bottom: initial;
+    padding-top: .25rem;
+	    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+	z-index:10
+
+  }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: block;
+  float: none;
+
+  }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+border: 2px solid #2a5b6c;
+  display: inline-block;
+  _display: block;
+  *display: block;
+  width: 11px;
+  height: 11px;
+  }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+background: #2a5b6c;
+    border-color: #2a5b6c;
+  }
